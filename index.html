@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>
+        Game Of Life
+    </title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="board" width="600" height="600"></canvas>
+        <div id="controls">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <div id="shapeControl" title="Select a shape and press CTRL over the game board to draw." >
+                <button onclick="drawM('point')" class="shapeButton">
+                    <div id="pointButton"></div>
+                </button>
+                <button onclick="drawM('rect')" class="shapeButton">
+                    <div id="rectButton"></div>
+                </button>
+                <!-- <button onclick="drawM('circle')" class="shapeButton">
+                    <div id="circleButton"></div>
+                </button> -->
+            </div>
+            <h4><span id="timer"></span>MS</h4>
+            <span id="coordDisplay"></span>
+        </div>
+    </div>
+
+    <script src="./life.js"></script>
+</body>
+</html>
